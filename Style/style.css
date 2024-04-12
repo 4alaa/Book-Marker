@@ -1,0 +1,462 @@
+*
+{
+    box-sizing: border-box;
+}
+/* body
+{
+    margin: 0;
+    padding: 0;
+    background-color: rgb(31, 48, 38);
+} */
+body {
+    min-height: 100%;
+    padding-bottom: 3rem;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    width: 100%;
+    /* background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949; */
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+
+ }
+
+
+ body[light-mode="dark"] {
+    background: linear-gradient(170deg, rgba(49, 57, 73, 0.8) 20%, rgba(49, 57, 73, 0.5) 20%, rgba(49, 57, 73, 0.5) 35%, rgba(41, 48, 61, 0.6) 35%, rgba(41, 48, 61, 0.8) 45%, rgba(31, 36, 46, 0.5) 45%, rgba(31, 36, 46, 0.8) 75%, rgba(49, 57, 73, 0.5) 75%), linear-gradient(45deg, rgba(20, 24, 31, 0.8) 0%, rgba(41, 48, 61, 0.8) 50%, rgba(82, 95, 122, 0.8) 50%, rgba(133, 146, 173, 0.8) 100%) #313949;
+    /* color: #ced4e2; */
+}
+
+body[light-mode="light"] {
+    background-color: white;
+}
+
+
+
+
+
+
+  
+  .bg-sun{
+    background-color: rgb(204, 218, 210);
+  }
+
+header img
+{
+    width: 50px;
+    height: 50px;
+}
+header h1
+{
+    position: absolute;
+    top:12.5%;
+    left: 11%;
+    /* color: rgb(135,185,168); */
+    color: white;
+}
+
+.container
+{
+    position: relative;
+    top: -300px;
+}
+h3
+{
+    color:rgb(54, 115, 173) ;
+}
+
+
+i
+{
+    font-size: 25px;
+    text-decoration: none;
+    cursor: pointer;
+}
+.link_contain{
+    position: relative;
+    border-radius: 40px;
+
+}
+.link_contain::after
+{
+    position: absolute;
+    content: '';
+    width: 0px;
+    height: 0px;
+    background-color: rgb(189, 161, 161,0.4);
+    left: 50%;
+    top:50%;
+    transform: translate(-50%,-50%);
+    border-radius: 50px;
+
+
+}
+/* .link_contain:hover.link_contain::after
+{
+    animation: animateLink 0.7s  ;
+}
+
+
+@keyframes animateLink {
+    0%{width: 0;height: 0;}
+    100%{   
+    width: 100%;
+    height: 100%;
+    }
+} */
+.arrow-up
+{
+  background-color: rgba(0, 0, 0, 0.8);
+  color: rgb(23, 140, 156);
+  font-size: 20px;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 3px;
+  bottom: 10px;
+}
+
+.modeofPage
+{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+
+
+
+
+
+
+  
+
+
+
+.deleteAll button {
+    padding: 0.1em 0.25em;
+    width: 17em;
+    height: 4.2em;
+    background-color: #212121;
+    border: 0.08em solid #fff;
+    border-radius: 0.3em;
+    font-size: 12px;
+    cursor: pointer;
+  }
+  
+  .deleteAll button span {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    bottom: 0.4em;
+    width: 11.25em;
+    height: 2.5em;
+    background-color: #212121;
+    border-radius: 0.2em;
+    font-size: 1.5em;
+    color: #fff;
+    border: 0.08em solid #fff;
+    box-shadow: 0 0.4em 0.1em 0.019em #fff;
+  }
+
+  
+  .deleteAll button span:hover {
+    transition: all 0.5s;
+    transform: translate(0, 0.4em);
+    box-shadow: 0 0 0 0 #fff;
+  }
+  
+  .deleteAll button span:not(hover) {
+    transition: all 1s;
+  }
+
+
+  .sure a {
+  position: relative;
+  display: inline-block;
+  padding: 15px 30px;
+  border: 2px solid #fefefe;
+  text-transform: uppercase;
+  color: #fefefe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 20px;
+}
+
+.sure a::before {
+  content: '';
+  position: absolute;
+  top: 6px;
+  left: -2px;
+  width: calc(100% + 4px);
+  height: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleY(1);
+}
+
+.sure a:hover::before {
+  transform: scaleY(0);
+}
+
+.sure a::after {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: -2px;
+  height: calc(100% + 4px);
+  width: calc(100% - 12px);
+  background-color: #212121;
+  transition: 0.3s ease-in-out;
+  transform: scaleX(1);
+  transition-delay: 0.5s;
+}
+
+.sure a:hover::after {
+  transform: scaleX(0);
+}
+
+.sure a span {
+  position: relative;
+  z-index: 3;
+}
+
+.sure button {
+  background-color: none;
+  text-decoration: none;
+  background-color: #212121;
+  border: none;
+  margin-top: 15px;
+}
+  
+
+
+
+/* The switch - the box around the slider */
+#theme-toggle-button {
+    font-size: 17px;
+    position: relative;
+    display: inline-block;
+    width: 5em;
+    cursor: pointer;
+  }
+  
+  /* Hide default HTML checkbox */
+  #toggle {
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  #container,
+  #patches,
+  #stars,
+  #button,
+  #sun,
+  #moon,
+  #cloud {
+    transition-property: all;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    transition-duration: 0.25s;
+  }
+  
+  /* night sky background */
+  #toggle:checked + svg #container {
+    fill: #2b4360;
+  }
+  
+  /* move button to right when checked */
+  #toggle:checked + svg #button {
+    transform: translate(28px, 2.333px);
+  }
+  
+  /* show/hide sun and moon based on checkbox state */
+  #sun {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #sun {
+    opacity: 0;
+  }
+  
+  #moon {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #moon {
+    opacity: 1;
+  }
+  
+  /* show or hide background items on checkbox state */
+  #cloud {
+    opacity: 1;
+  }
+  
+  #toggle:checked + svg #cloud {
+    opacity: 0;
+  }
+  
+  #stars {
+    opacity: 0;
+  }
+  
+  #toggle:checked + svg #stars {
+    opacity: 1;
+  }
+  
+
+  
+/* small */
+@media screen and (max-width:600px) {
+    .modeofPage
+    {
+        position: absolute;
+        top: -20px;
+        right: 2px;
+    }
+    #theme-toggle-button {
+        font-size: 17px;
+
+        width: 3em;
+      }
+
+
+    header h1
+{
+    font-size: 20px;
+    top:3.5%;
+    left: 10%;
+}
+
+.container
+{
+    position: relative;
+    top: -80px;
+    width: 84%;
+    margin: auto;
+}
+
+
+header img
+{
+    width: 30px;
+    height: 30px;
+}
+
+}
+/* md */
+@media screen and (max-width:768px) and (min-width:600px) {
+    .modeofPage
+    {
+        position: absolute;
+        top: -20px;
+        right: 2px;
+    }
+    #theme-toggle-button {
+        font-size: 17px;
+
+        width: 4em;
+      }
+  
+    header h1
+{
+    font-size: 20px;
+    top:4.5%;
+    left: 10%;
+}
+
+.container
+{
+    position: relative;
+    top: -110px;
+}
+
+
+header img
+{
+    width: 40px;
+    height: 40px;
+}
+
+}
+/* lg */
+@media screen and (max-width:992px) and (min-width:768px) {
+  
+    .modeofPage
+    {
+        position: absolute;
+        top: -20px;
+        right: 2px;
+    }
+    #theme-toggle-button {
+        font-size: 17px;
+
+        width: 4.5em;
+      }
+    header h1
+{
+    font-size: 23px;
+    top:6.5%;
+    left: 10%;
+}
+
+.container
+{
+    position: relative;
+    top: -170px;
+}
+
+header img
+{
+    width: 46px;
+    height: 46px;
+}
+}
+/* xl */
+@media screen and (max-width:1300px) and (min-width:992px) {
+    .modeofPage
+    {
+        position: absolute;
+        top: -20px;
+        right: 2px;
+    }
+    #theme-toggle-button {
+        font-size: 17px;
+
+        width: 5em;
+      }
+  
+  
+    header h1
+{
+    font-size: 25px;
+    top:8.5%;
+    left: 10%;
+}
+
+.container
+{
+    position: relative;
+    top: -230px;
+
+}
+
+header img
+{
+    width: 60px;
+    height: 60px;
+}
+
+}
+
+
+
+.linkimg
+{
+  width: 40px;
+  height: 40px;
+}
